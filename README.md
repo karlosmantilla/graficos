@@ -63,8 +63,8 @@ Podemos guardar las gráficas. Para lo cual tenemos varias opciones:
 > detach(mtcars)
 > dev.off()
 ```
+También se puede emplear:
 ```r
-> # También se puede emplear:
 > # win.metafile()
 > # png()
 > # jpeg()
@@ -82,7 +82,7 @@ Podemos guardar las gráficas. Para lo cual tenemos varias opciones:
 > detach(mtcars)
 > dev.off()
 ```
-<img src="figure/ejemplo.tiff" title="plot of chunk unnamed-chunk-52" alt="plot of chunk unnamed-chunk-52" width="750" />
+La anterior línea de comandos guarda la imagen en el directorio de trabajo
 
 ```r
 > ## Vamos, ahora, a definir algunos parámetros gráficos.
