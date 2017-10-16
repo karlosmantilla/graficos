@@ -47,7 +47,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
 > plot(wt, mpg)
 ```
 
-<img src="figure/ejemplo.tiff" title="plot of chunk unnamed-chunk-27" alt="plot of chunk unnamed-chunk-27" width="750" />
+<img src="figure/ejemplo.tiff" width="50%" />
 
 
 
