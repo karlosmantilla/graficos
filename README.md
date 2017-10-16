@@ -45,239 +45,42 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
 ```r
 > attach(mtcars)
 > plot(wt, mpg)
-```
-
-<img src="figure/ejemplo.tiff" width="50%" />
-
-
-
-```r
 > abline(lm(mpg~wt))
-```
-
-```
-Error in int_abline(a = a, b = b, h = h, v = v, untf = untf, ...): plot.new has not been called yet
-```
-
-
-
-```r
 > title("Regresión: MPG|Weight")
-```
-
-```
-Error in title("Regresión: MPG|Weight"): plot.new has not been called yet
-```
-
-
-
-```r
 > detach(mtcars)
 ```
 
-
-
-```r
-> getwd()
-```
-
-```
-[1] "F:/Dropbox (Personal)/UIS/0001 CURSO R/Sesion2"
-```
-
-
-
-```r
-> ## Podemos guardar las gráficas. Para lo cual tenemos varias opciones:
-```
-
-
-
-```r
-> # 1. Usando el menú contextual
-```
-
-
-
-```r
-> # 2. Mediante el uso de comandos
-```
-
-
-
+Podemos guardar las gráficas. Para lo cual tenemos varias opciones:
+1. Usando el menú contextual
+2. Mediante el uso de comandos
 ```r
 > pdf("ejemplo.pdf")
-```
-
-
-
-```r
 > attach(mtcars)
-```
-
-```
-The following object is masked from package:ggplot2:
-
-    mpg
-```
-
-
-
-```r
 > plot(wt, mpg)
-```
-
-<img src="figure/unnamed-chunk-37-1.png" title="plot of chunk unnamed-chunk-37" alt="plot of chunk unnamed-chunk-37" width="750" />
-
-
-
-```r
 > abline(lm(mpg~wt))
-```
-
-```
-Error in int_abline(a = a, b = b, h = h, v = v, untf = untf, ...): plot.new has not been called yet
-```
-
-
-
-```r
 > title("Regression of MPG on Weight")
-```
-
-```
-Error in title("Regression of MPG on Weight"): plot.new has not been called yet
-```
-
-
-
-```r
 > detach(mtcars)
-```
-
-
-
-```r
 > dev.off()
 ```
-
-```
-pdf 
-  4 
-```
-
-
-
 ```r
 > # También se puede emplear:
-```
-
-
-
-```r
 > # win.metafile()
-```
-
-
-
-```r
 > # png()
-```
-
-
-
-```r
 > # jpeg()
-```
-
-
-
-```r
 > # bmp()
-```
-
-
-
-```r
 > # tiff()
-```
-
-
-
-```r
 > # xfig()
-```
-
-
-
-```r
 > # postscript()
 ```
-
-
-
 ```r
 > tiff("ejemplo.tiff")
-```
-
-
-
-```r
 > attach(mtcars)
-```
-
-```
-The following object is masked from package:ggplot2:
-
-    mpg
-```
-
-
-
-```r
 > plot(wt, mpg)
-```
-
-<img src="figure/unnamed-chunk-52-1.png" title="plot of chunk unnamed-chunk-52" alt="plot of chunk unnamed-chunk-52" width="750" />
-
-
-
-```r
 > abline(lm(mpg~wt))
-```
-
-```
-Error in int_abline(a = a, b = b, h = h, v = v, untf = untf, ...): plot.new has not been called yet
-```
-
-
-
-```r
 > title("Regresión MPG|Weight")
-```
-
-```
-Error in title("Regresión MPG|Weight"): plot.new has not been called yet
-```
-
-
-
-```r
 > detach(mtcars)
-```
-
-
-
-```r
 > dev.off()
 ```
-
-```
-pdf 
-  4 
-```
-
-
 
 ```r
 > ## Vamos, ahora, a definir algunos parámetros gráficos.
