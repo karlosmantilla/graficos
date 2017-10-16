@@ -49,7 +49,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
 > title("Regresión: MPG|Weight")
 > detach(mtcars)
 ```
-<img src="figure/uno.png" title="plot of chunk unnamed-chunk-52" alt="plot of chunk unnamed-chunk-52" width="750" />
+<img src="figure/uno.png" title="plot of chunk unnamed-chunk-52" alt="plot of chunk unnamed-chunk-52" width="50%" />
 
 Podemos guardar las gráficas. Para lo cual tenemos varias opciones:
 1. Usando el menú contextual
