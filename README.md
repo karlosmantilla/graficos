@@ -84,101 +84,26 @@ También se puede emplear:
 ```
 La anterior línea de comandos guarda la imagen en el directorio de trabajo
 
-```r
-> ## Vamos, ahora, a definir algunos parámetros gráficos.
-```
-
-
-
-```r
-> ## Para ello, usemos un ejemplo corto tomado de la literatura.
-```
-
-
-
-```r
-> ## Dos drogas y sus dosis:
-```
-
-
-
-```r
-> # +--------------------------------------------------+
-```
-
-
-
-```r
-> # | Dosage | Response to Drug A | Response to Drug B |
-```
-
-
-
-```r
-> # +--------+--------------------+--------------------+
-```
-
-
-
-```r
-> # |   20   |         16         |          15        |
-```
-
-
-
-```r
-> # |   30   |         20         |          18        |
-```
-
-
-
-```r
-> # |   40   |         27         |          25        |
-```
-
-
-
-```r
-> # |   45   |         40         |          31        |
-```
-
-
-
-```r
-> # |   60   |         60         |          40        |
-```
-
-
-
-```r
-> # +--------------------------------------------------+
-```
-
-
-
+Vamos, ahora, a definir algunos parámetros gráficos.
+Para ello, usemos un ejemplo corto tomado de la literatura.
+Dos drogas y sus dosis:
+# +--------------------------------------------------+
+# | Dosage | Response to Drug A | Response to Drug B |
+# +--------+--------------------+--------------------+
+# |   20   |         16         |          15        |
+# |   30   |         20         |          18        |
+# |   40   |         27         |          25        |
+# |   45   |         40         |          31        |
+# |   60   |         60         |          40        |
+# +--------------------------------------------------+
 ```r
 > dose <- c(20, 30, 40, 45, 60)
-```
-
-
-
-```r
 > drugA <- c(16, 20, 27, 40, 60)
-```
-
-
-
-```r
 > drugB <- c(15, 18, 25, 31, 40)
-```
-
-
-
-```r
 > plot(dose, drugA, type="b")
 ```
 
-<img src="figure/unnamed-chunk-72-1.png" title="plot of chunk unnamed-chunk-72" alt="plot of chunk unnamed-chunk-72" width="750" />
+<img src="figure/unnamed-chunk-72-1.png" title="plot of chunk unnamed-chunk-72" alt="plot of chunk unnamed-chunk-72" width="50%" />
 
 
 
