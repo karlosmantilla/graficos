@@ -81,6 +81,7 @@ Podemos guardar las gráficas. Para lo cual tenemos varias opciones:
 > detach(mtcars)
 > dev.off()
 ```
+<img src="figure/ejemplo.tiff" title="plot of chunk unnamed-chunk-52" alt="plot of chunk unnamed-chunk-52" width="750" />
 
 ```r
 > ## Vamos, ahora, a definir algunos parámetros gráficos.
