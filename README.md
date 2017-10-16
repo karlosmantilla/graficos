@@ -87,6 +87,7 @@ La anterior línea de comandos guarda la imagen en el directorio de trabajo
 Vamos, ahora, a definir algunos parámetros gráficos.
 Para ello, usemos un ejemplo corto tomado de la literatura.
 Dos drogas y sus dosis:
+```r
 # +--------------------------------------------------+
 # | Dosage | Response to Drug A | Response to Drug B |
 # +--------+--------------------+--------------------+
@@ -96,6 +97,7 @@ Dos drogas y sus dosis:
 # |   45   |         40         |          31        |
 # |   60   |         60         |          40        |
 # +--------------------------------------------------+
+```
 ```r
 > dose <- c(20, 30, 40, 45, 60)
 > drugA <- c(16, 20, 27, 40, 60)
