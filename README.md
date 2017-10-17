@@ -107,7 +107,7 @@ Dos drogas y sus dosis:
 
 <img src="figure/unnamed-chunk-72-1.png" title="plot of chunk unnamed-chunk-72" alt="plot of chunk unnamed-chunk-72" width="50%" />
 
-
+La siguiente línea de comandos
 
 ```r
 > opar <- par(no.readonly=TRUE)
@@ -115,19 +115,23 @@ Dos drogas y sus dosis:
 > plot(dose, drugA, type="b")
 > par(opar)
 ```
-```r
-> plot(dose, drugA, type="b", lty=2, pch=17)
-```
+
+Produce el siguiente resultado
 
 <img src="figure/unnamed-chunk-77-1.png" title="plot of chunk unnamed-chunk-77" alt="plot of chunk unnamed-chunk-77" width="50%" />
 
-
+Y
+```r
+> plot(dose, drugA, type="b", lty=2, pch=17)
+```
+Produce el mismo resultado.
+Se pueden cambiar algunos argumentos para obtener otros resultados
 
 ```r
 > plot(dose, drugA, type="b", lty=3, lwd=3, pch=15, cex=2)
 ```
 
-<img src="figure/unnamed-chunk-78-1.png" title="plot of chunk unnamed-chunk-78" alt="plot of chunk unnamed-chunk-78" width="750" />
+<img src="figure/unnamed-chunk-78-1.png" title="plot of chunk unnamed-chunk-78" alt="plot of chunk unnamed-chunk-78" width="50%" />
 
 
 
