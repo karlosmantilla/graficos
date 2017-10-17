@@ -111,35 +111,15 @@ Dos drogas y sus dosis:
 
 ```r
 > opar <- par(no.readonly=TRUE)
-```
-
-
-
-```r
 > par(lty=2, pch=17)
-```
-
-
-
-```r
 > plot(dose, drugA, type="b")
-```
-
-<img src="figure/unnamed-chunk-75-1.png" title="plot of chunk unnamed-chunk-75" alt="plot of chunk unnamed-chunk-75" width="750" />
-
-
-
-```r
 > par(opar)
 ```
-
-
-
 ```r
 > plot(dose, drugA, type="b", lty=2, pch=17)
 ```
 
-<img src="figure/unnamed-chunk-77-1.png" title="plot of chunk unnamed-chunk-77" alt="plot of chunk unnamed-chunk-77" width="750" />
+<img src="figure/unnamed-chunk-77-1.png" title="plot of chunk unnamed-chunk-77" alt="plot of chunk unnamed-chunk-77" width="50%" />
 
 
 
