@@ -244,7 +244,7 @@ Pongamos la leyenda y grafiquemos ambos casos
 > par(opar)
 ```
 
-<img src="figure/unnamed-chunk-123-1.png" title="plot of chunk unnamed-chunk-123" alt="plot of chunk unnamed-chunk-123" width="750" />
+<img src="figure/Rplot02.png" title="plot of chunk unnamed-chunk-123" alt="plot of chunk unnamed-chunk-123" width="750" />
 
 ```r
 > attach(mtcars)
