@@ -186,9 +186,9 @@ Retomemos el ejemplo de las dos drogas:
 + xlim=c(0, 60), ylim=c(0, 70))
 ```
 
-<img src="figure/unnamed-chunk-100-1.png" title="plot of chunk unnamed-chunk-100" alt="plot of chunk unnamed-chunk-100" width="750" />
+<img src="figure/unnamed-chunk-100-1.png" title="plot of chunk unnamed-chunk-100" alt="plot of chunk unnamed-chunk-100" width="50%" />
 
-
+También se puede agregar eñl título usando:
 
 ```r
 > title(main="My Title", col.main="red",
@@ -196,141 +196,32 @@ Retomemos el ejemplo de las dos drogas:
 + xlab="My X label", ylab="My Y label",
 + col.lab="green", cex.lab=0.75)
 ```
-
-```
-Error in title(main = "My Title", col.main = "red", sub = "My Subtitle", : plot.new has not been called yet
-```
-
-
-
-```r
-> dev.off()
-```
-
-```
-pdf 
-  4 
-```
-
-
-
-```r
-> ## Veamos algo más creativo:
-```
-
-
+Veamos algo más creativo:
 
 ```r
 > x <- c(1:10)
-```
-
-
-
-```r
 > y <- x
-```
-
-
-
-```r
 > z <- 10/x
-```
-
-
-
-```r
 > opar <- par(no.readonly=TRUE)
-```
-
-
-
-```r
 > par(mar=c(5, 4, 4, 8) + 0.1)
-```
-
-
-
-```r
 > plot(x, y, type="b",
 + pch=21, col="red",
 + yaxt="n", lty=3, ann=FALSE)
-```
-
-<img src="figure/unnamed-chunk-109-1.png" title="plot of chunk unnamed-chunk-109" alt="plot of chunk unnamed-chunk-109" width="750" />
-
-
-
-```r
 > lines(x, z, type="b", pch=22, col="blue", lty=2)
-```
-
-```
-Error in plot.xy(xy.coords(x, y), type = type, ...): plot.new has not been called yet
-```
-
-
-
-```r
 > axis(2, at=x, labels=x, col.axis="red", las=2)
-```
-
-```
-Error in axis(2, at = x, labels = x, col.axis = "red", las = 2): plot.new has not been called yet
-```
-
-
-
-```r
 > axis(4, at=z, labels=round(z, digits=2),
 + col.axis="blue", las=2, cex.axis=0.7, tck=-.01)
-```
-
-```
-Error in axis(4, at = z, labels = round(z, digits = 2), col.axis = "blue", : plot.new has not been called yet
-```
-
-
-
-```r
 > mtext("y=1/x", side=4, line=3, cex.lab=1, las=2, col="blue")
-```
-
-```
-Error in mtext("y=1/x", side = 4, line = 3, cex.lab = 1, las = 2, col = "blue"): plot.new has not been called yet
-```
-
-
-
-```r
 > title("An Example of Creative Axes",
 + xlab="X values",
 + ylab="Y=X")
-```
-
-```
-Error in title("An Example of Creative Axes", xlab = "X values", ylab = "Y=X"): plot.new has not been called yet
-```
-
-
-
-```r
 > par(opar)
 ```
-
-
-
+<img src="figure/Rplot01.png" title="plot of chunk unnamed-chunk-100" alt="plot of chunk unnamed-chunk-100" width="50%" />
 ```r
 > dev.off()
 ```
 
-```
-pdf 
-  4 
-```
-
-
-
-```r
 > # Pongamos la leyenda y grafiquemos ambos casos
 ```
 
