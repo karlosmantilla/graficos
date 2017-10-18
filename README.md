@@ -175,8 +175,7 @@ Retomemos el ejemplo de las dos drogas:
 > plot(dose, drugB, type="b", pch=23, lty=6, col="blue", bg="green")
 > par(opar)
 ```
-<img src="figure/unnamed-chunk-97-1.png" title="plot of chunk unnamed-chunk-97" alt="plot of chunk unnamed-chunk-97" width="50%" />
-<img src="figure/unnamed-chunk-98-1.png" title="plot of chunk unnamed-chunk-98" alt="plot of chunk unnamed-chunk-98" width="50%" />
+<img src="figure/Rplot.png" title="plot of chunk unnamed-chunk-97" alt="plot of chunk unnamed-chunk-97" width="75%" />
 
 ```r
 > plot(dose, drugA, type="b",
