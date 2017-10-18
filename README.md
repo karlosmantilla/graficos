@@ -133,131 +133,47 @@ Se pueden cambiar algunos argumentos para obtener otros resultados
 
 <img src="figure/unnamed-chunk-78-1.png" title="plot of chunk unnamed-chunk-78" alt="plot of chunk unnamed-chunk-78" width="50%" />
 
-
+veamos, ahora, ejemplos de colores
 
 ```r
 > library(RColorBrewer)
-```
-
-
-
-```r
 > n <- 7
-```
-
-
-
-```r
 > mycolors <- brewer.pal(n, "Set1")
-```
-
-
-
-```r
 > barplot(rep(1,n), col=mycolors)
 ```
 
-<img src="figure/unnamed-chunk-82-1.png" title="plot of chunk unnamed-chunk-82" alt="plot of chunk unnamed-chunk-82" width="750" />
-
-
+<img src="figure/unnamed-chunk-82-1.png" title="plot of chunk unnamed-chunk-82" alt="plot of chunk unnamed-chunk-82" width="50%" />
 
 ```r
 > n <- 10
-```
-
-
-
-```r
 > mycolors <- rainbow(n)
-```
-
-
-
-```r
 > pie(rep(1, n), labels=mycolors, col=mycolors)
 ```
 
-<img src="figure/unnamed-chunk-85-1.png" title="plot of chunk unnamed-chunk-85" alt="plot of chunk unnamed-chunk-85" width="750" />
-
-
+<img src="figure/unnamed-chunk-85-1.png" title="plot of chunk unnamed-chunk-85" alt="plot of chunk unnamed-chunk-85" width="50%" />
 
 ```r
 > mygrays <- gray(0:n/n)
-```
-
-
-
-```r
 > pie(rep(1, n), labels=mygrays, col=mygrays)
 ```
 
-<img src="figure/unnamed-chunk-87-1.png" title="plot of chunk unnamed-chunk-87" alt="plot of chunk unnamed-chunk-87" width="750" />
+<img src="figure/unnamed-chunk-87-1.png" title="plot of chunk unnamed-chunk-87" alt="plot of chunk unnamed-chunk-87" width="50%" />
 
-
-
-```r
-> par(font.lab=3, cex.lab=1.5, font.main=4, cex.main=2)
-```
-
-
-
-```r
-> windowsFonts(
-+ A=windowsFont("Arial Black"),
-+ B=windowsFont("Bookman Old Style"),
-+ C=windowsFont("Comic Sans MS")
-+ )
-```
-
-
+Retomemos el ejemplo de las dos drogas:
 
 ```r
 > dose <- c(20, 30, 40, 45, 60)
-```
-
-
-
-```r
 > drugA <- c(16, 20, 27, 40, 60)
-```
-
-
-
-```r
 > drugB <- c(15, 18, 25, 31, 40)
 ```
-
-
-
 ```r
 > opar <- par(no.readonly=TRUE)
-```
-
-
-
-```r
 > par(pin=c(2, 3))
-```
-
-
-
-```r
 > par(lwd=2, cex=1.5)
-```
-
-
-
-```r
 > par(cex.axis=.75, font.axis=3)
-```
-
-
-
-```r
 > plot(dose, drugA, type="b", pch=19, lty=2, col="red")
 ```
-
-<img src="figure/unnamed-chunk-97-1.png" title="plot of chunk unnamed-chunk-97" alt="plot of chunk unnamed-chunk-97" width="750" />
+<img src="figure/unnamed-chunk-97-1.png" title="plot of chunk unnamed-chunk-97" alt="plot of chunk unnamed-chunk-97" width="50%" />
 
 
 
