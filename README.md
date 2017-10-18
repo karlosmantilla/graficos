@@ -172,24 +172,11 @@ Retomemos el ejemplo de las dos drogas:
 > par(lwd=2, cex=1.5)
 > par(cex.axis=.75, font.axis=3)
 > plot(dose, drugA, type="b", pch=19, lty=2, col="red")
-```
-<img src="figure/unnamed-chunk-97-1.png" title="plot of chunk unnamed-chunk-97" alt="plot of chunk unnamed-chunk-97" width="50%" />
-
-
-
-```r
 > plot(dose, drugB, type="b", pch=23, lty=6, col="blue", bg="green")
-```
-
-<img src="figure/unnamed-chunk-98-1.png" title="plot of chunk unnamed-chunk-98" alt="plot of chunk unnamed-chunk-98" width="750" />
-
-
-
-```r
 > par(opar)
 ```
-
-
+<img src="figure/unnamed-chunk-97-1.png" title="plot of chunk unnamed-chunk-97" alt="plot of chunk unnamed-chunk-97" width="50%" />
+<img src="figure/unnamed-chunk-98-1.png" title="plot of chunk unnamed-chunk-98" alt="plot of chunk unnamed-chunk-98" width="50%" />
 
 ```r
 > plot(dose, drugA, type="b",
