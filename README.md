@@ -222,154 +222,47 @@ Veamos algo más creativo:
 > dev.off()
 ```
 
-> # Pongamos la leyenda y grafiquemos ambos casos
-```
-
-
+Pongamos la leyenda y grafiquemos ambos casos
 
 ```r
 > dose <- c(20, 30, 40, 45, 60)
-```
-
-
-
-```r
 > drugA <- c(16, 20, 27, 40, 60)
-```
-
-
-
-```r
 > drugB <- c(15, 18, 25, 31, 40)
-```
-
-
-
-```r
 > opar <- par(no.readonly=TRUE)
-```
-
-
-
-```r
 > par(lwd=2, cex=1.5, font.lab=2)
-```
-
-
-
-```r
 > plot(dose, drugA, type="b",
 + pch=15, lty=1, col="red", ylim=c(0, 60),
 + main="Drug A vs. Drug B",
 + xlab="Drug Dosage", ylab="Drug Response")
+> lines(dose, drugB, type="b",
++ pch=17, lty=2, col="blue")
+> abline(h=c(30), lwd=1.5, lty=2, col="gray")
+> library(Hmisc)
+> minor.tick(nx=3, ny=3, tick.ratio=0.5)
+> legend("topleft", inset=.05, title="Drug Type", c("A","B"),
++ lty=c(1, 2), pch=c(15, 17), col=c("red", "blue"))
+> par(opar)
 ```
 
 <img src="figure/unnamed-chunk-123-1.png" title="plot of chunk unnamed-chunk-123" alt="plot of chunk unnamed-chunk-123" width="750" />
 
-
-
-```r
-> lines(dose, drugB, type="b",
-+ pch=17, lty=2, col="blue")
-```
-
-```
-Error in plot.xy(xy.coords(x, y), type = type, ...): plot.new has not been called yet
-```
-
-
-
-```r
-> abline(h=c(30), lwd=1.5, lty=2, col="gray")
-```
-
-```
-Error in int_abline(a = a, b = b, h = h, v = v, untf = untf, ...): plot.new has not been called yet
-```
-
-
-
-```r
-> library(Hmisc)
-```
-
-
-
-```r
-> minor.tick(nx=3, ny=3, tick.ratio=0.5)
-```
-
-```
-Error in (function (side, at = NULL, labels = TRUE, tick = TRUE, line = NA, : plot.new has not been called yet
-```
-
-
-
-```r
-> legend("topleft", inset=.05, title="Drug Type", c("A","B"),
-+ lty=c(1, 2), pch=c(15, 17), col=c("red", "blue"))
-```
-
-```
-Error in strwidth(legend, units = "user", cex = cex, font = text.font): plot.new has not been called yet
-```
-
-
-
-```r
-> par(opar)
-```
-
-
-
 ```r
 > attach(mtcars)
-```
-
-```
-The following object is masked from package:ggplot2:
-
-    mpg
-```
-
-
-
-```r
 > plot(wt, mpg,
 + main="Mileage vs. Car Weight",
 + xlab="Weight", ylab="Mileage",
 + pch=18, col="blue")
+> text(wt, mpg,
++ row.names(mtcars),
++ cex=0.6, pos=4, col="red")
+> detach(mtcars)
 ```
 
 <img src="figure/unnamed-chunk-131-1.png" title="plot of chunk unnamed-chunk-131" alt="plot of chunk unnamed-chunk-131" width="750" />
 
 
-
-```r
-> text(wt, mpg,
-+ row.names(mtcars),
-+ cex=0.6, pos=4, col="red")
-```
-
-```
-Error in text.default(wt, mpg, row.names(mtcars), cex = 0.6, pos = 4, : plot.new has not been called yet
-```
-
-
-
-```r
-> detach(mtcars)
-```
-
-
-
 ```r
 > opar <- par(no.readonly=TRUE)
-```
-
-
-
-```r
 > par(cex=1.5)
 ```
 
