@@ -244,7 +244,7 @@ Pongamos la leyenda y grafiquemos ambos casos
 > par(opar)
 ```
 
-<img src="figure/Rplot02.png" title="plot of chunk unnamed-chunk-123" alt="plot of chunk unnamed-chunk-123" width="750" />
+<img src="figure/Rplot02.png" title="plot of chunk unnamed-chunk-123" alt="plot of chunk unnamed-chunk-123" width="50%" />
 
 ```r
 > attach(mtcars)
@@ -258,127 +258,22 @@ Pongamos la leyenda y grafiquemos ambos casos
 > detach(mtcars)
 ```
 
-<img src="figure/unnamed-chunk-131-1.png" title="plot of chunk unnamed-chunk-131" alt="plot of chunk unnamed-chunk-131" width="750" />
-
-
-```r
-> opar <- par(no.readonly=TRUE)
-> par(cex=1.5)
-```
-
-
-
-```r
-> plot(1:7,1:7,type="n")
-```
-
-<img src="figure/unnamed-chunk-136-1.png" title="plot of chunk unnamed-chunk-136" alt="plot of chunk unnamed-chunk-136" width="750" />
-
-
-
-```r
-> text(3,3,"Example of default text")
-```
-
-```
-Error in text.default(3, 3, "Example of default text"): plot.new has not been called yet
-```
-
-
-
-```r
-> text(4,4,family="mono","Example of mono-spaced text")
-```
-
-```
-Error in text.default(4, 4, family = "mono", "Example of mono-spaced text"): plot.new has not been called yet
-```
-
-
-
-```r
-> text(5,5,family="serif","Example of serif text")
-```
-
-```
-Error in text.default(5, 5, family = "serif", "Example of serif text"): plot.new has not been called yet
-```
-
-
-
-```r
-> par(opar)
-```
-
+<img src="figure/Rplot03.png" title="plot of chunk unnamed-chunk-131" alt="plot of chunk unnamed-chunk-131" width="50%" />
 
 
 ```r
 > attach(mtcars)
-```
-
-```
-The following object is masked from package:ggplot2:
-
-    mpg
-```
-
-
-
-```r
 > opar <- par(no.readonly=TRUE)
-```
-
-
-
-```r
 > par(mfrow=c(2,2))
-```
-
-
-
-```r
 > plot(wt,mpg, main="Scatterplot of wt vs. mpg")
-```
-
-<img src="figure/unnamed-chunk-144-1.png" title="plot of chunk unnamed-chunk-144" alt="plot of chunk unnamed-chunk-144" width="750" />
-
-
-
-```r
 > plot(wt,disp, main="Scatterplot of wt vs. disp")
-```
-
-<img src="figure/unnamed-chunk-145-1.png" title="plot of chunk unnamed-chunk-145" alt="plot of chunk unnamed-chunk-145" width="750" />
-
-
-
-```r
 > hist(wt, main="Histogram of wt")
-```
-
-<img src="figure/unnamed-chunk-146-1.png" title="plot of chunk unnamed-chunk-146" alt="plot of chunk unnamed-chunk-146" width="750" />
-
-
-
-```r
 > boxplot(wt, main="Boxplot of wt")
-```
-
-<img src="figure/unnamed-chunk-147-1.png" title="plot of chunk unnamed-chunk-147" alt="plot of chunk unnamed-chunk-147" width="750" />
-
-
-
-```r
 > par(opar)
-```
-
-
-
-```r
 > detach(mtcars)
 ```
 
-
+<img src="figure/Rplot04.png" title="plot of chunk unnamed-chunk-144" alt="plot of chunk unnamed-chunk-144" width="750" />
 
 ```r
 > attach(mtcars)
