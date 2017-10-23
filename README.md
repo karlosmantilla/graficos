@@ -262,6 +262,8 @@ Ahora, probemos agregando texto sobre el espacio del gráfico
 
 <img src="figure/Rplot03.png" title="plot of chunk unnamed-chunk-131" alt="plot of chunk unnamed-chunk-131" width="75%" />
 
+También, es posible dividir el espacio para los gráficos con el fin de mostrar varias gráficas en la misma área. la opción ```r mfrow=c(#filas,#columnas)``` permite selecionar el número de filas y el número de columnas en las que se va a dividir el área de gráficos
+
 ```r
 > attach(mtcars)
 > opar <- par(no.readonly=TRUE)
@@ -275,6 +277,8 @@ Ahora, probemos agregando texto sobre el espacio del gráfico
 ```
 
 <img src="figure/Rplot04.png" title="plot of chunk unnamed-chunk-144" alt="plot of chunk unnamed-chunk-144" width="75%" />
+
+Con la opción ```r layout(matrix(c(1,1,2,3), 2, 2, byrow = TRUE)) ``` se puede dividir de manera no uniforme, incluso determinar el tamaño de cada celda. A continuación dos ejemplos:
 
 ```r
 attach(mtcars)
@@ -307,6 +311,8 @@ detach(mtcars)
 ```
 
 <img src="figure/Rplot06.png" title="plot of chunk unnamed-chunk-161" alt="plot of chunk unnamed-chunk-161" width="75%" />
+
+Finalmente, la opción ```r par(fig=c(A, B, C, D))``` permite agregar gráficos en posiciones específicas. Los valores de A, B, C y D van de 0 a 1 y representan la proporción que cada gráfico ocupa en el eje. En el ejemplo, la primera figura (gráfico de dispersión) va de los puntos 0 a 0.8 en el eje de las x y del punto 0 a 0.8 en el eje de las y, de manera similar con los dos diagramas de caja de la figura
 
 ```r
 
