@@ -293,149 +293,34 @@ hist(disp)
 detach(mtcars)
 ```
 
-<img src="figure/Rplot05.png" title="plot of chunk unnamed-chunk-153" alt="plot of chunk unnamed-chunk-153" width="750" />
+<img src="figure/Rplot05.png" title="plot of chunk unnamed-chunk-153" alt="plot of chunk unnamed-chunk-153" width="75%" />
 
 ```r
-> attach(mtcars)
+attach(mtcars)
+layout(matrix(c(1, 1, 2, 3), 2, 2, byrow = TRUE),
+widths=c(3, 1), heights=c(1, 2))
+hist(wt)
+hist(mpg)
+hist(disp)
+detach(mtcars)
 ```
 
-```
-The following object is masked from package:ggplot2:
-
-    mpg
-```
-
-
+<img src="figure/Rplot06.png" title="plot of chunk unnamed-chunk-161" alt="plot of chunk unnamed-chunk-161" width="75%" />
 
 ```r
-> layout(matrix(c(1,1,2,3), 2, 2, byrow = TRUE))
+
+opar <- par(no.readonly=TRUE)
+par(fig=c(0, 0.8, 0, 0.8))
+plot(mtcars$wt, mtcars$mpg,
+xlab="Miles Per Gallon",
+ylab="Car Weight")
+par(fig=c(0, 0.8, 0.55, 1), new=TRUE)
+boxplot(mtcars$wt, horizontal=TRUE, axes=FALSE)
+par(fig=c(0.65, 1, 0, 0.8), new=TRUE)
+boxplot(mtcars$mpg, axes=FALSE)
+mtext("Enhanced Scatterplot", side=3, outer=TRUE, line=-3)
+par(opar)
 ```
 
+<img src="figure/Rplot07.png" title="plot of chunk unnamed-chunk-167" alt="plot of chunk unnamed-chunk-167" width="75%" />
 
-
-```r
-> hist(wt)
-```
-
-<img src="figure/unnamed-chunk-161-1.png" title="plot of chunk unnamed-chunk-161" alt="plot of chunk unnamed-chunk-161" width="750" />
-
-
-
-```r
-> hist(mpg)
-```
-
-<img src="figure/unnamed-chunk-162-1.png" title="plot of chunk unnamed-chunk-162" alt="plot of chunk unnamed-chunk-162" width="750" />
-
-
-
-```r
-> hist(disp)
-```
-
-<img src="figure/unnamed-chunk-163-1.png" title="plot of chunk unnamed-chunk-163" alt="plot of chunk unnamed-chunk-163" width="750" />
-
-
-
-```r
-> detach(mtcars)
-```
-
-
-
-```r
-> attach(mtcars)
-```
-
-```
-The following object is masked from package:ggplot2:
-
-    mpg
-```
-
-
-
-```r
-> layout(matrix(c(1, 1, 2, 3), 2, 2, byrow = TRUE),
-+ widths=c(3, 1), heights=c(1, 2))
-```
-
-
-
-```r
-> hist(wt)
-```
-
-<img src="figure/unnamed-chunk-167-1.png" title="plot of chunk unnamed-chunk-167" alt="plot of chunk unnamed-chunk-167" width="750" />
-
-
-
-```r
-> hist(mpg)
-```
-
-<img src="figure/unnamed-chunk-168-1.png" title="plot of chunk unnamed-chunk-168" alt="plot of chunk unnamed-chunk-168" width="750" />
-
-
-
-```r
-> hist(disp)
-```
-
-<img src="figure/unnamed-chunk-169-1.png" title="plot of chunk unnamed-chunk-169" alt="plot of chunk unnamed-chunk-169" width="750" />
-
-
-
-```r
-> detach(mtcars)
-```
-
-
-
-```r
-> opar <- par(no.readonly=TRUE)
-> par(fig=c(0, 0.8, 0, 0.8))
-> plot(mtcars$wt, mtcars$mpg, xlab="Miles Per Gallon", ylab="Car Weight")
-```
-
-<img src="figure/unnamed-chunk-173-1.png" title="plot of chunk unnamed-chunk-173" alt="plot of chunk unnamed-chunk-173" width="750" />
-
-```r
-> par(fig=c(0, 0.8, 0.55, 1), new=TRUE)
-```
-
-```
-Warning in par(fig = c(0, 0.8, 0.55, 1), new = TRUE): llamada par(new=TRUE)
-sin gráfico
-```
-
-```r
-> boxplot(mtcars$wt, horizontal=TRUE, axes=FALSE)
-```
-
-<img src="figure/unnamed-chunk-175-1.png" title="plot of chunk unnamed-chunk-175" alt="plot of chunk unnamed-chunk-175" width="750" />
-
-```r
-> par(fig=c(0.65, 1, 0, 0.8), new=TRUE)
-```
-
-```
-Warning in par(fig = c(0.65, 1, 0, 0.8), new = TRUE): llamada par(new=TRUE)
-sin gráfico
-```
-
-```r
-> boxplot(mtcars$mpg, axes=FALSE)
-```
-<img src="figure/unnamed-chunk-177-1.png" title="plot of chunk unnamed-chunk-177" alt="plot of chunk unnamed-chunk-177" width="750" />
-
-```r
-> mtext("Enhanced Scatterplot", side=3, outer=TRUE, line=-3)
-```
-
-```
-Error in mtext("Enhanced Scatterplot", side = 3, outer = TRUE, line = -3): plot.new has not been called yet
-```
-```r
-> par(opar)
-```
