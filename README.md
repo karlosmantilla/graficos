@@ -276,75 +276,24 @@ Pongamos la leyenda y grafiquemos ambos casos
 <img src="figure/Rplot04.png" title="plot of chunk unnamed-chunk-144" alt="plot of chunk unnamed-chunk-144" width="750" />
 
 ```r
-> attach(mtcars)
+attach(mtcars)
+opar <- par(no.readonly=TRUE)
+par(mfrow=c(3,1))
+hist(wt)
+hist(mpg)
+hist(disp)
+par(opar)
+detach(mtcars)
+dev.off()
+attach(mtcars)
+layout(matrix(c(1,1,2,3), 2, 2, byrow = TRUE))
+hist(wt)
+hist(mpg)
+hist(disp)
+detach(mtcars)
 ```
 
-```
-The following object is masked from package:ggplot2:
-
-    mpg
-```
-
-
-
-```r
-> opar <- par(no.readonly=TRUE)
-```
-
-
-
-```r
-> par(mfrow=c(3,1))
-```
-
-
-
-```r
-> hist(wt)
-```
-
-<img src="figure/unnamed-chunk-153-1.png" title="plot of chunk unnamed-chunk-153" alt="plot of chunk unnamed-chunk-153" width="750" />
-
-
-
-```r
-> hist(mpg)
-```
-
-<img src="figure/unnamed-chunk-154-1.png" title="plot of chunk unnamed-chunk-154" alt="plot of chunk unnamed-chunk-154" width="750" />
-
-
-
-```r
-> hist(disp)
-```
-
-<img src="figure/unnamed-chunk-155-1.png" title="plot of chunk unnamed-chunk-155" alt="plot of chunk unnamed-chunk-155" width="750" />
-
-
-
-```r
-> par(opar)
-```
-
-
-
-```r
-> detach(mtcars)
-```
-
-
-
-```r
-> dev.off()
-```
-
-```
-pdf 
-  4 
-```
-
-
+<img src="figure/Rplot05.png" title="plot of chunk unnamed-chunk-153" alt="plot of chunk unnamed-chunk-153" width="750" />
 
 ```r
 > attach(mtcars)
