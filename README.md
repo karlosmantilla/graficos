@@ -246,6 +246,8 @@ Pongamos la leyenda y grafiquemos ambos casos
 
 <img src="figure/Rplot02.png" title="plot of chunk unnamed-chunk-123" alt="plot of chunk unnamed-chunk-123" width="50%" />
 
+Ahora, probemos agregando texto sobre el espacio del gráfico
+
 ```r
 > attach(mtcars)
 > plot(wt, mpg,
@@ -258,9 +260,7 @@ Pongamos la leyenda y grafiquemos ambos casos
 > detach(mtcars)
 ```
 
-<img src="figure/Rplot03.png" title="plot of chunk unnamed-chunk-131" alt="plot of chunk unnamed-chunk-131" width="50%" />
-
-Ahora, probemos agregando texto sobre el espacio del gráfico
+<img src="figure/Rplot03.png" title="plot of chunk unnamed-chunk-131" alt="plot of chunk unnamed-chunk-131" width="75%" />
 
 ```r
 > attach(mtcars)
